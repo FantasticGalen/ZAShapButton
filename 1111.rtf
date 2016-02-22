@@ -1,0 +1,17 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf130
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25100\viewh13020\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0  
+\fs36 Code signing also allows your app\'92s signature to be removed and re-signed by a trusted source. For example, you sign your app before submitting it to the store, but Apple re-signs it before distributing it to customers. Also, you can re-sign and submit a fully tested development build of your app to the store.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+Xcode uses your signing identity to sign your app during the build process. This signing identity consists of a public-private key pair that Apple issues. The public-private key pair is stored in your keychain, and used by cryptographic functions to generate the signature. The certificate stored in your developer account contains just the public key. An intermediate certificate is also required to be in your keychain to ensure that your certificate is issued by a certificate authority.\
+\
+Signing requires that you have both the signing identity and the intermediate certificate installed in your keychain. When you install Xcode, Apple\'92s intermediate certificates are added to your keychain for you. You use Xcode to create your signing identity and sign your app. Your signing identity is added to your keychain, and the corresponding certificate is added to your account in Member Center.\
+\
+Signing identities are used to sign your app or installer package. A development certificate identifies you, as a team member, in a development provisioning profile that allows apps signed by you to launch on devices. Adistribution certificate identifies your team or organization in a distribution provisioning profile and allows you to submit your app to the store. Only a team agent or an admin can create a distribution certificate. You also use different development and distribution certificates to sign iOS and Mac apps. For a complete list of certificate types, refer to Your Signing Certificates in Depth.\
+\
+For a company, other team members have their own signing identities installed on their Mac computers. Member Center contains a repository for all of the combined team assets but doesn\'92t store any of the private keys.}
